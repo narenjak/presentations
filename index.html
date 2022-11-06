@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>rfid@snyazdani</title>
+
+<link rel="shortcut icon" href="" />
+<link rel="apple-touch-icon" href="">
+
+<style>
+
+.number {
+	font-size: 50pt;
+	color: lightgray;
+}
+.inline-block {
+   display: inline-block;
+}
+body {
+  background-image: url(noise.png);
+}
+.step {
+    position: relative;
+    padding: 40px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+    font-family: 'PT Serif', georgia, serif;
+    font-size: 48px;
+    line-height: 1.5;
+}
+.slidelarge {
+  display: block;
+  width: 1000px;
+  height: 600px;
+  padding: 30px 15px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+  color: rgb(102, 102, 102);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+  font-family: 'Open Sans', Arial, sans-serif;
+  padding-top: 20pt;
+  background-image:url("bottom.png");
+  background-repeat:no-repeat;   
+  background-size: 1000px;
+  background-position:bottom;
+}
+.slide {
+  display: block;
+  width: 800px;
+  height: 600px;
+  padding: 120px 60px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+  color: rgb(102, 102, 102);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+  font-family: 'Open Sans', Arial, sans-serif;
+  padding-top: 20pt;
+  background-image:url("bottom.png");
+  background-repeat:no-repeat;   
+  background-size: 800px;
+  background-position:bottom;
+}
+.credits, .credits h2 {
+  padding-top: 0;
+}
+.rtl {
+  direction: rtl;
+}
+@font-face {
+  font-family: calibry;
+  src: url('Calibri.ttf');
+}
+body{
+  font-family:  calibry;
+}
+</style>
+</head>
+
+<body>
+<div id="impress">
+
+<div class="step slide" data-x="-400" data-y="-300" data-rotate="0" data-scale="1.128125">
+  <div style="font-size: 0.5em;">
+    <center>
+      <img src="logo_uni.png" align="left" width="10%" height="10%">
+    <img src="InTheNameOfGod.png" length="85%">
+    <h1 style="font-family: calibri; text-align: right; font-size: 2.2em;">
+      ... RFID دربارۀ
+    </h1>
+  </div>
+</div>
+
+<div class="step slide" data-x="1575" data-y="-300" data-rotate="0" data-scale="1">
+    <fieldset >
+    <legend style="font-family: calibri;">** فهرست مطالب **</legend>
+    <div style="font-family: calibri; font-size: 0.7em; text-align: right">
+      مقدمه
+      <br /> تاریخچه
+      <br /> تکنولوژی
+      <br /> تجهیزات و محصولات
+      <br /> نحوه عملکرد
+      <br /> چالش ها محدودیت ها
+      <br /> امنیت
+      <br />
+      <small>
+        (مطالب اضافه)
+        مقایسه با دیگر تکنولوژی ها//
+      </small>
+    </div>
+  </fieldset>     
+</div>
+
+<div class="step slide" data-x="1455" data-y="375" data-rotate="20" data-scale="1">
+  <center>
+    <img src=rfid_abv.jpg width=90% >
+    <p style="font-family: calibri; font-size: 0.7em;">
+      این تکنولوژی شناسایی از طریق امواج رادیویی را میسر کرده است 
+    </p>
+</div>
+
+<div class="step slide" data-x="1112" data-y="969" data-rotate="40" data-scale="1">
+  <img src=spectrum.jpg width=100% height="90%">
+  <p style="font-family: calibri;  text-align: center">
+    امواج رادیویی
+  </p>
+</div>
+
+<div class="step slide" data-x="587" data-y="1410" data-rotate="60" data-scale="1" >
+  <h1 style="font-size: 0.9em; text-align: center; font-family:Calibri;">
+    تاریخچه
+  </h1>
+  <img src="radar.png" width="30%">
+  <video autoplay loop width="65%">
+    <source src=radar.mp4 type="video/mp4" >
+      you con't see this video :(
+  </video>
+  <p style="font-size: 0.35em; text-align: right; font-family:Calibri;">
+    رادار، ابتدا موج‌های خود را توسط فرستنده تولید کرده و توسط آنتن فرستنده آنرا می‌فرستاد و در صورتی که مانعی مانند یک شیء پرنده در آسمان، مقابل موج‌های پراکنده شده قرار داشته باشد، موج‌های ضعیف‌تری را بازمی‌تاباند
+  </p>
+</div>
+
+<div class="step slide" data-x="-49" data-y="1625" data-rotate="80" data-scale="1">
+  <h1 style="font-size: 0.7em; text-align: center; font-family:Calibri;">
+  RFID تکنولوژی
+  </h1>
+  <img src="manCard.jpg" width="50%" height="40%" align="left">
+  <img src="metro_card.jpg" width="45%" height="40%" align="right">
+  <br \>
+
+  <img src="use6.webp" width="32%" height="55%" align="right">
+  <br \><br \>
+  <p style="font-size: 0.55em; text-align: right; font-family:Calibri;">
+    در هر زمانی این نیاز وجود داشته باشد که یک انسان، شئ، کالا و یا هر چیز دیگر شناسایی شود و اطلاعاتی از آن در اختیار قرار گیرد، میتوان روی تکنولوژی 
+    <br \>
+    حساب کرد RFID
+  </p>  
+</div>
+
+<div class="step slide" data-x="-742" data-y="1644" data-rotate="100" data-scale="1">
+  <h1 style="font-size: 0.7em; text-align: center; font-family:Calibri;">
+    RFID تجهیزات و محصولات
+  </h1>
+  <img src="tagANDreader.jpg" width="70%" height="50%" align="left">  
+  <p  style="font-size: 0.6em; text-align: right; font-family:Calibri;">
+    •	انتن •
+    <br \>
+    •	ریدر •
+    <br \>
+    •	کارت •
+    <br \>
+    •	تگ •
+    <br \>
+    •...•
+  </p>
+  <img src="antennas.jpg" width="43%" height="45%">
+  <img src="card.PNG" width="25%" height="45%">
+  <img src="tag2.PNG" width="25%" height="45%">
+</div>
+
+<div class="step slide" data-x="-1387" data-y="1410" data-rotate="120" data-scale="1">
+  <h1 style="font-size: 0.8em; text-align: center; font-family:Calibri; font-style: italic;">RFID Tag/label</h1>
+  <img src="tag.png">
+  <p style="font-size: 0.65em; text-align: right; font-family:Calibri;">
+    تخصیص هویت منحصر به فرد به هر عنصر مورد نظر
+  </p>
+</div>
+
+<div class="step slide" data-x="-1912" data-y="969" data-rotate="140" data-scale="1" >
+  <div style="font-size: 0.65em; text-align: center; font-family:Calibri;">
+  <img src="RFID-tag.jpg">
+  <br \>
+  بخش های تگ<br \>
+  </div>
+
+  <p style="font-size: 0.65em; text-align: right; font-family:Calibri;">
+    :تراشه یا چیپ الکترونیکی دارای 4 بانک حافظه است
+    <pre style="font-size: 0.6em; text-align: left; font-family:Calibri;">
+        User Code/TID/Reserve Code/Ep Code
+    </pre>
+  </p>
+</div>
+
+<div class="step slide" data-x="-2255" data-y="375" data-rotate="160" data-scale="1">
+  <center>
+  <h1 style="font-size: 0.8em; text-align: center; font-family:Calibri;">نحوه عملکرد تگ
+  </h1>
+  <img src="rfid_sys.jpg" width="70%" >
+    <br \>
+    <small style="font-size: 0.5em; text-align: right; font-family:Calibri;">
+      _تگ ها داده ها را از طریق امواج رادیویی به آنتن و ریدر منتقل میکنند_چگونه؟
+    </small>
+</div>
+
+<div class="step slide" data-x="-2375" data-y="-310" data-rotate="180" data-scale="1">
+  <pre style="font-size: 0.8em;text-align: center; font-family:Calibri;">
+    دسته بندی های مختلف </pre>
+  <pre style="font-size: 0.6em; text-align: right; font-family:Calibri;">
+  نوع کارکرد *
+    اکتیو/پسیو        
+  نوع شکل ظاهری *
+    لیبلی/کارتی         
+  نوع فرکانس *
+    lf/hf/uhf/nfc         
+  نوع کاربرد *
+    لباس/دام         
+  نوع شرایط محیطی *
+    مقاوم در برابر آب/ضربه/حرارت        
+  </pre>
+  <img src="rfidFrequency.PNG"  width="10%" height="20%">
+</div>
+
+<div class="step slide" data-x="-2250" data-y="-1000" data-rotate="200" data-scale="1">
+  <center>
+  <p style=" font-family:Calibri;">
+    چند نمونه تگ و کارت
+  </p>
+  <img src="reader-use4.jpg" width="50%">
+  <img src="rfidFrequency.PNG" width="50%">
+</div>
+
+<div class="step slide" data-x="-3250" data-y="-1350" data-rotate="200" data-scale="1">
+  <div style="display:inline-block;">
+    <img src="inside-card.webp" height="50%" width="50%">
+    <img src="use1.webp" height="50%" width="45%">
+    <img src="use2.jpg" height="50%" width="45%">
+    <img src="use5.jpg" height="45%" width="45%">
+
+  </div>
+</div>
+
+<div class="step slide" data-x="-1910" data-y="-1600" data-rotate="220" data-scale="1">
+  <video controls width=100% height="100%">
+    <source src=video01.mp4 type="video/mp4">
+    you con't see this video :(
+  </video>
+  <p style="text-align:center; font-size: 0.7em; font-family: calibri;">
+    درون چیپ تگ ها چه میگذرد؟
+  </p>
+</div>
+
+<div class="step slide" data-x="-1400" data-y="-2045" data-rotate="240" data-scale="1">
+  <p style="font-size: 0.7em; text-align: center; font-family:Calibri;">
+    ** RFID مغز یک سیستم **
+ </p>
+ <h3 style="text-align: center; font-style: italic;">
+   Reader
+ </h3>
+ <img src="reader.avif" width="50%" align="right">
+ <p style= " text-align: center; font-family:Calibri;">
+   امواج رادیویی را منتقل و دریافت میکنند
+ </p>
+</div>
+
+<div class="step slide" data-x="-775" data-y="-2265" data-rotate="260" data-scale="1">
+  <pre style="font-size: 0.8em;text-align: center; font-family:Calibri;"> دسته بندی های مختلف </pre>
+  <pre style="font-size: 0.6em; text-align: right; font-family:Calibri;">
+    نوع حمل و نقل *
+      ثابت/قابل حمل       
+    نوع اتصالات *
+      بلوتوثی/کابلی/وایفای         
+    نوع فرکانس *
+      برد بلند/برد متوسط/برد کوتاه         
+    براساس قابلیت ها *
+      دوربین/قرائت بارکد/gps         
+    تعداد آنتن*
+       1/2/4/8/16        
+    </pre>
+</div>
+
+<!--step 16-->
+<div class="step slide" data-x="-100" data-y="-2265" data-rotate="280" data-scale="1">
+  <div style="font-size: 0.75em; text-align: right ;font-family:Calibri;">
+    معمول ترین دسته بندی قرائتگرها، به صورت ثابت یا قابل حمل بودن آنهاست
+  <br \>
+  <br \>
+    <img src="Stable_Reader.png" alt="right" width="50%">
+  <img src="UHF-Handhed-Reader.png" alt="left" width="50%" align="left">
+  </div>
+</div>
+
+<div class="step slide" data-x="530" data-y="-2045" data-rotate="300" data-scale="1">
+  <div style="text-align:center; font-family: calibri; font-size: 1.3em;">
+    Antenna
+    <br \>
+    <img src="antennas.jpg" height="70%" width="70%">
+    <br \>
+  </div>
+  <div style="text-align:center; font-family: calibri; font-size: 0.7em;">
+    متداول ترین دسته بندی بر اساس نوع انتشار امواج آنان است. (خطی/دایره‌ای)
+  </div>
+</div>
+
+<div class="step slide" data-x="1050" data-y="-1625" data-rotate="320" data-scale="1">
+  <h1 style="text-align:center; font-family: calibri; font-size: 0.8em;">
+    POWER
+  </h1>
+  <img src="power1.png" width="100%" height="80%">
+</div>
+
+<div class="step slide" data-x="1410" data-y="-1050" data-rotate="335" data-scale="1">
+  <h1 style="text-align:center; font-family: calibri; font-size: 1.0em;">
+     RFID کاربرد تکنولوژی
+  </h1>
+  <img src='applicatiions.jpg' width=100%  height="90%" align="center">
+
+  <!--
+  <h1 style="font-size: 0.8em; text-align: center; font-family:Calibri;">
+    انواع تگ</h1>
+  <center>
+    <img src="Type-of-an-RFID-tags.jpg" width="90%" height="80%">
+    <img src="tags.png" width="100%" >
+  <br \>
+  <pre style="text-align:right; font-family: calibri; font-size: 0.5em;">
+    تداخل قرائت گر 
+    (زمانیکه سیگنال های قرائتگرها با یکدیگر تداخل میکنند) 
+    میتوان با استفاده از تداخل قرائتگر ها جلوگیری کرد
+    تداخل تگ ها 
+    (زمانیکه تعداد زیادی از تگ ها یک ریدر را هنگام ارسال داده در زمان یکسان اشتباه میگیرند)
+    حل: انتخاب یک قرائتگر که اطلاعات را در هر لحظه جمع آوری کند
+    </pre>
+-->
+</div>
+
+<div class="step slide" data-x="2775" data-y="-300" data-rotate="0" data-scale="1">
+    <pre style="text-align:right; font-family: calibri; font-size: 0.65em;">  کارتهای مترویی
+      انبارداری هوشمند
+      پارکینگ هوشمند
+      فروشگاه هوشمند
+      خط تولید هوشمند </pre>
+    <img src="passport1.jpg" width="45%" height="50%">
+    <img src="passport2.jpg" width="45%" height="50%">
+</div>
+
+<div class="step slide" data-x="2570" data-y="775" data-rotate="20" data-scale="1">
+  <img src="Walmart.jpg" width="100%">
+</div>
+
+<div class="step slide" data-x="2100" data-y="1800" data-rotate="40" data-scale="1">
+  <h1 style="text-align:right; font-family: calibri; font-size: 0.8em;">
+    چالش ها و محدودیت ها
+  </h1>
+  <pre style="text-align:right; font-family: calibri; font-size: 0.5em;">
+  این سیستم در معرض مایعات دچار تضعیف میشود 
+  (مایعات بر روی فرکانس ها تاثیر میگذارند)
+  فلزها و پالس های الکترومغناطیسی در سیستم اختلال ایجاد میکنند
+  </pre>
+  <img src="import.png">
+</div>
+
+<div class="step slide" data-x="1250" data-y="2520" data-rotate="60" data-scale="1">
+  <div >
+    <h1 style="text-align:right; font-family: calibri; font-size: 0.8em;">
+      مقایسه با دیگر تکنولوژی ها
+    </h1>
+    <img src="nfc-and-rfid.jpg" width="40%" height="10%">
+    <img src="barcode-and-rfid.jpg" width="55%" height="20%">
+  </div>
+</div>
+
+<div class="step slide" data-x="150" data-y="2925" data-rotate="80" data-scale="1">
+  <div align="center">
+    <img src="end.jpg">
+    <br />t.me/snyazdani
+    <br />github.com/narenjak
+    <br/>:)
+  </div> 
+</div>
+
+<div class="step" data-x="0" data-y="0" data-scale="8">
+</div>
+
+</div>
+<script src="impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
